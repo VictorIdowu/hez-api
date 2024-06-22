@@ -8,4 +8,4 @@ class Clients(models.Model):
     return self.clients_ip
 
   clients_ip = models.CharField(max_length=200)
-  greetings = models.CharField(max_length=500)
+  greeting = models.CharField(max_length=500)

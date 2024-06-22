@@ -19,7 +19,7 @@ def get_client_ip(request):
 def clients(request):
     client_ip = get_client_ip(request)
     response_data = {
-        'ip_address': client_ip,
-        'greetings': 'Hello world'
+        'client_ip': client_ip,
+        'greeting': 'Hello world'
     }
     return Response(response_data)
